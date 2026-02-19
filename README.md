@@ -279,6 +279,11 @@ Capture d'écran du code :
 **<img width="779" height="657" alt="image" src="https://github.com/user-attachments/assets/f7c188f6-a0b7-40d8-91f1-27e35bd4ac3e" />**
 
 
+Vérification : 
+
+
+
+
 ---------------------------------------------------
 ### **Atelier 2 : Choisir notre point de restauration**  
 Aujourd’hui nous restaurobs “le dernier backup”. Nous souhaitons **ajouter la capacité de choisir un point de restauration**.
