@@ -13,8 +13,8 @@ spec:
           command: ["/bin/sh","-c"]
           args:
             - |
-              LATEST=$(ls -t /backup/*.db | head -1)
-              cp $LATEST /data/app.db
+              cp /backup/app-[TIMESTAMP].db /data/app.db
+              
           volumeMounts:
             - name: data
               mountPath: /data
