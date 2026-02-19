@@ -279,12 +279,12 @@ Capture d'écran du code :
 **<img width="779" height="657" alt="image" src="https://github.com/user-attachments/assets/f7c188f6-a0b7-40d8-91f1-27e35bd4ac3e" />**
 
 
-Vérification du lien  : <img width="775" height="44" alt="image" src="https://github.com/user-attachments/assets/62796dd3-61f0-4816-b436-53240511ce6b" />
-
 
 
 Vérication du code 
-<img width="587" height="219" alt="image" src="https://github.com/user-attachments/assets/34755fad-2d9b-4f5d-9b89-0705492f704b" />
+
+<img width="693" height="184" alt="image" src="https://github.com/user-attachments/assets/7549721a-db4b-498a-b6a5-b02cf24daaeb" />
+
 
 
 
