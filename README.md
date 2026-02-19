@@ -230,28 +230,37 @@ Faites preuve de pédagogie et soyez clair dans vos explications et procedures d
 
 **Exercice 1 :**  
 Quels sont les composants dont la perte entraîne une perte de données ?  
-  
-*..Répondez à cet exercice ici..*
+
+La perte de données survient si l'on perd :
+
+- Le PVC pra-data : On perd les données en "temps réel" (tout ce qui a été enregistré depuis la dernière minute).
+
+- Le PVC pra-backup : On perd l'historique des sauvegardes. Si la production crash après, on n'a plus rien pour restaurer.
 
 **Exercice 2 :**  
 Expliquez nous pourquoi nous n'avons pas perdu les données lors de la supression du PVC pra-data  
   
-*..Répondez à cet exercice ici..*
+Parce que nous avons mis en place une redondance. Même si le volume de prodcution "pra-data" a été supprimé, une copie exacte du fichier SQLite existait sur le volume de secours 'pra-backup" grâce au CronJob qui est une sauvegarde automatique. Il nous a suffi de copier ce fichier de secours vers le nouveau volume pour tout récupérer.
 
 **Exercice 3 :**  
 Quels sont les RTO et RPO de cette solution ?  
   
-*..Répondez à cet exercice ici..*
+- Pour le RPO (Perte de données) : Le CronJob (C'est le CronJob sqlite-backup qui définit le RPO). Dans le code, il est configuré pour s'exécuter toutes les minutes. Conséquence : Si le système crash, tu perds au maximum les données créées entre la dernière minute et le moment du crash. Calcul : RPO=1 minute.
+
+- Pour le RTO, c'est l'intervention humaine et l'interruption de service. Pourquoi ? La restauration n'est pas automatique. Le service reste coupé le temps que l'administrateur détecte la panne et lance manuellement le script de restauration (50-job-restore.yaml).
 
 **Exercice 4 :**  
 Pourquoi cette solution (cet atelier) ne peux pas être utilisé dans un vrai environnement de production ? Que manque-t-il ?   
   
-*..Répondez à cet exercice ici..*
+Il manque un gros élément critique de sécurité et de fiabilité : Absence d'externalisation : Les sauvegardes sont sur le même disque physique que la production. Si le serveur (le Noeud) tombe en panne, on perd tout en même temps
   
 **Exercice 5 :**  
 Proposez une archtecture plus robuste.   
   
-*..Répondez à cet exercice ici..*
+Pour sécuriser une application réelle, il faudrait :
+
+Stockage déporté (Cloud Storage) : Envoyer les sauvegardes hors du cluster Kubernetes pour parer à une destruction totale du site.
+Base de données : Remplacer SQLite par une base de données comme PostgreSQL ou MariaDB tournant en mode "Cluster". Avantage : Si le noeud primaire tombe, le second prend le relais instantanément sans intervention humaine, ce qui réduit le RTO à presque zéro.
 
 ---------------------------------------------------
 Séquence 6 : Ateliers  
