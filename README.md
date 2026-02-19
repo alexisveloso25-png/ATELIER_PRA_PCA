@@ -271,9 +271,12 @@ Difficulté : Moyenne (~2 heures)
 * count : nombre d’événements en base
 * last_backup_file : nom du dernier backup présent dans /backup
 * backup_age_seconds : âge du dernier backup
+  
 
 Capture d'écran du code : 
-<img width="779" height="657" alt="image" src="https://github.com/user-attachments/assets/f7c188f6-a0b7-40d8-91f1-27e35bd4ac3e" />
+
+
+**<img width="779" height="657" alt="image" src="https://github.com/user-attachments/assets/f7c188f6-a0b7-40d8-91f1-27e35bd4ac3e" />**
 
 
 ---------------------------------------------------
