@@ -13,7 +13,7 @@ spec:
           command: ["/bin/sh","-c"]
           args:
             - |
-              cp /backup/app-[TIMESTAMP].db /data/app.db
+              cp /backup/app-1771500841.db /data/app.db
               
           volumeMounts:
             - name: data
