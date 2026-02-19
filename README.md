@@ -292,7 +292,15 @@ Vérication du code
 ### **Atelier 2 : Choisir notre point de restauration**  
 Aujourd’hui nous restaurobs “le dernier backup”. Nous souhaitons **ajouter la capacité de choisir un point de restauration**.
 
-*..Décrir ici votre procédure de restauration (votre runbook)..*  
+La capture des commandes a effuctuer : 
+
+<img width="1610" height="446" alt="image" src="https://github.com/user-attachments/assets/a5663e62-1409-4295-9000-2471acc9be19" />
+
+
+-  1 Commande : Cette commande est la première étape du PRA : identifier l'état passé que l'on souhaite retrouver.
+-  2 Commande : Une fois le fichier choisi, tu lances le processus de remplacement de la base actuelle.
+-  3 Commande : C'est une commande de sécurité pour s'assurer que la restauration est finie avant de relancer l'application.
+-  
   
 ---------------------------------------------------
 Evaluation
