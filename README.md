@@ -283,7 +283,8 @@ Capture d'écran du code :
 
 Vérication du code 
 
-<img width="693" height="184" alt="image" src="https://github.com/user-attachments/assets/7549721a-db4b-498a-b6a5-b02cf24daaeb" />
+<img width="772" height="219" alt="image" src="https://github.com/user-attachments/assets/f9adba71-bb54-490c-924f-cfe3a155e902" />
+
 
 
 
