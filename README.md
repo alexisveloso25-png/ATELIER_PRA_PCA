@@ -300,7 +300,12 @@ La capture des commandes a effuctuer :
 -  1 Commande : Cette commande est la première étape du PRA : identifier l'état passé que l'on souhaite retrouver.
 -  2 Commande : Une fois le fichier choisi, tu lances le processus de remplacement de la base actuelle.
 -  3 Commande : C'est une commande de sécurité pour s'assurer que la restauration est finie avant de relancer l'application.
--  
+
+  Cette commandes permet de vérifier : 
+
+  <img width="1257" height="27" alt="image" src="https://github.com/user-attachments/assets/5725f5e5-fac9-4ab2-af7c-4aac72337160" />
+
+Cette commande est l'étape de validation de ta procédure de restauration. Elle sert à confirmer que la "mission" de réparation est terminée avec succès avant de relancer ton application.
   
 ---------------------------------------------------
 Evaluation
